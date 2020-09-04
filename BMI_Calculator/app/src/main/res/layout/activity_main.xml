@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools" tools:ignore="TextFields"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textColor="#220661"/>
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="@string/hint_user_height"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="@string/hint_user_weight"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:onClick="calculateBmi"
+        android:text="@string/button_name"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="#220661"
+        android:textColor="#FDFCFD"/>
+
+    <TextView
+        android:id="@+id/lblBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+</RelativeLayout>
